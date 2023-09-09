@@ -16,10 +16,10 @@ app.get('/api', (req, res) => {
 
   // Create the response JSON
   const responseData = {
-    slack_name: "Brian Kimurgor",
+    slack_name: slackName,
     current_day: currentDay,
     utc_time: currentUTCTime,
-    track: "back end",
+    track: track,
     github_file_url: "https://github.com/username/repo/blob/main/file_name.ext",
     github_repo_url: "https://github.com/BrianKimurgor/zuri_back_end1",
     status_code: 200
@@ -30,7 +30,7 @@ app.get('/api', (req, res) => {
 });
 
 // Start the server
-const port = process.env.VERCEL.PORT || 3000;
+const port = process.env.VERCEL_PORT || 3000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
