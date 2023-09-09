@@ -16,11 +16,11 @@ app.get('/api', (req, res) => {
 
   // Create the response JSON
   const responseData = {
-    slack_name: slackName,
+    slack_name: "Brian Kimurgor",
     current_day: currentDay,
     utc_time: currentUTCTime,
-    track: track,
-    github_file_url: "https://github.com/username/repo/blob/main/file_name.ext",
+    track: "back end",
+    github_file_url: "https://github.com/BrianKimurgor/zuri_back_end1/blob/main/asset/index.js",
     github_repo_url: "https://github.com/BrianKimurgor/zuri_back_end1",
     status_code: 200
   };
